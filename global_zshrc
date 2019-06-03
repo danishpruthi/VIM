@@ -1,7 +1,7 @@
 
 
 
-export ZSH=/Users/danish/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -83,7 +83,6 @@ alias dosa='mosh danish@dosa.serc.iisc.in'
 alias idli='mosh danish@idli.serc.iisc.in'
 alias soweto='ssh ddanish@soweto.lti.cs.cmu.edu'
 alias space='du -ckhs * | sort -rn | head'
-alias ranger='python /Users/danish/Downloads/ranger-1.7.2/ranger.py .'
 alias rsync='rsync -avzh --progress'
 #alias vim='mvim' 
 alias ipython='python -m IPython'
@@ -208,7 +207,7 @@ function up() {
 }
 
 
-source /Users/danish/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.oh-my-zsh/oh-my-zsh.sh
 PROMPT="%{$fg[blue]→%} %{$terminfo[bold]$fg[blue]%}%n%{$fg[blue]@%}%{$fg[red]%m%}%{$reset_color%} %{$terminfo[bold]$fg[blue]%}%5~%{$reset_color%} $(git_prompt_info)%{$reset_color%}
 # %{$fg[blue]»%}%{$reset_color%} %B%b"
@@ -228,7 +227,7 @@ export TERM=xterm-256color
 alias f='ranger'
 bindkey -e
 alias atom='/Applications/Atom.app/Contents/Resources/app/atom.sh'
-source /Users/danish/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.oh-my-zsh/oh-my-zsh.sh
 alias today='date "+%A, %B %-d, %Y"'
 export PATH={$PATH}:/usr/local/texlive/2017/bin/x86_64-darwin
